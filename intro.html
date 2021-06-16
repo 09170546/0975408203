@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!--分頁顯示的名稱  A-4 -->
+<title>壞饅頭</title>
+		
+<!--  引入自己寫的CSS  A-2-->
+<link href="style.css" rel="stylesheet" type="text/css">
+	
+<!--ctrl+/ 打註解 : 這4個link 是給 bootstrap用的 B-2 -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+       
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+       
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<!--給導覽列一個名字，叫做"bar"-->
+
+<!-- D-1 複製index.html 裡的導覽列, 一整個section 都要複製 -->
+<section id="bar">
+		<nav class="navbar navbar-expand-md navbar-light bg-light">
+			<a class="navbar-brand" href="#">壞饅頭</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<div class="navbar-nav mr-auto">
+						<!--class中的 avtive 代表被選擇中，所以在index.html中，active效果要放在"首頁"這個字上，在intro.html中，active效果要放在"自我介紹"這個字上-->
+					<a class="nav-item nav-link" href="index.html"> 首頁 <span class="sr-only">(current)</span></a>
+					<a class="nav-item nav-link active" href="intro.html">饅頭目錄</a>
+					<a class="nav-item nav-link" href="QA.html">趣事分享</a> 
+					<a class="nav-item nav-link active" href="contactus.html">店家地址</a>	
+					</div>
+	
+			</div>
+			
+		</nav>
+
+</section>
+
+
+
+<!--把畫面轉成container型態，分成3等分(col-4)
+#到style.css裡設定 padding-top，維持跟bar之間的距離	-->
+	
+<section id="introsecond">
+	<div class="container">
+		<div class="row">
+			<div class="col-4">
+				<div class="card" style="width: 18rem;">
+				  <img src="img/5.jpg" class="card-img-top">
+				  <div class="card-body">
+    			  <h4>壞饅頭</h4>
+				  <p class="card-text">外觀舖滿黑芝麻的壞饅頭，製做相當費工，包入特地選用新竹當地老字號店家出產的肉鬆，豐富的口感吃得到芝麻香與肉鬆得香甜。由於壞饅頭側面看起來就像是小男孩屁屁的造型因而有屁屁饅頭的稱呼。</p>
+				  </div>
+				</div>
+			</div>
+			
+			<div class="col-4">
+				<div class="card" style="width: 18rem;">
+					<img src="img/6.jpg" class="card-img-top">
+					<div class="card-body">
+					<h4>酒糟饅頭</h4>
+					<p class="card-text">家鄉在馬祖的老闆娘心想，我這個正港馬祖人，怎麼能不來一下這「家鄉味」呢？充滿家鄉味的健康新口味「-老酒饅頭」歷經一年多的研發、製作，不斷的嘗試、失敗、再嘗試，終於製作出心目中最讚的口味。我們的老酒饅頭，蒸發掉酒精但仍保有酒香，每一口都能咬到滿溢出來的香氣，還添加了紫米跟桂圓，更是健康加倍。聽了就餓了！還不快來試試！</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-4">
+				<div class="card" style="width: 18rem;">
+					<img src="img/7.jpg" class="card-img-top" >
+					<div class="card-body">
+					<h4>藍莓饅頭</h4>
+					<p class="card-text">自家熬煮的藍莓果醬，融入純手工製作的麵團內再成型，西式的果醬和饅頭這中西合併的組合，不僅外觀讓人驚艷，口感甜而不膩，是許愛甜食朋友最愛</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+	
+</body>
+</html>
